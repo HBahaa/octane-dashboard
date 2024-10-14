@@ -1,0 +1,32 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Providers/Redux Provider" />
+
+## Redux Toolkit Provider
+
+#### What is Redux & Redux Toolkit ?
+
+* Redux is a pattern and library for managing and updating global application state, where the UI triggers events called "actions" to describe what happened, and separate update logic called "reducers" updates the state in response.
+* The Redux Toolkit package is intended to be the standard way to write Redux logic. It was originally created to help address three common concerns about Redux:
+  * "Configuring a Redux store is too complicated"
+  * "I have to add a lot of packages to get Redux to do anything useful"
+  * "Redux requires too much boilerplate code"
+
+
+#### Why is it needed ?
+
+* It's used as state management tool, it contains one "global" store. Dispatching plain object actions to the store when something happens in the app. Pure reducer functions looking at those actions and returning immutably updated state.
+
+
+#### How to use it ?
+
+* Create the global store using ** configureStore ** which included combining reducers
+* Pass the store to ** Provider ** which imported from react-redux library
+* This provider will wrapper your app
+
+
+### References
+
+* Documentation:[getting-started](https://redux-toolkit.js.org/introduction/getting-started)
+* Redux Toolkit Setup with Next.js: [Setup](https://redux-toolkit.js.org/usage/nextjs)
+* RTK Video: [Redux - Complete Tutorial (with Redux Toolkit)](https://www.youtube.com/watch?v=5yEG6GhoJBs)

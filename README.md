@@ -1,58 +1,58 @@
-# React + TypeScript + Vite
+# Octane Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project is built using React/Ts with Redux Toolkit for state management
 
-Currently, two official plugins are available:
+### Helper node packages included:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   React-router-dom
+-   Mantine UI
+-   date-fns
+-   Redux Toolkit
+-   Storybook
 
-## Expanding the ESLint configuration
+## Setup development environment
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+We use node version 20.15.1
 
-- Configure the top-level `parserOptions` property like this:
+### Dependencies installation perquisites:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Scripts
+
+Please check `package.json` scripts for more info
+
+### Development
+
+To run json server
+```bash
+$ cd server && npx json-server db.json
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To run the development server:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+$ npm run dev
 ```
-to run json server
-- run `cd server && npx json-server db.json`
-- to run app open new terminal and write `npm run dev`
 
-To run app in development mode please use: **npm run dev**
-To run json server please use: **cd server && npx json-server db.json**
+To run linter
+
+```bash
+$ npm run lint
+```
+
+### Build
+
+To generate production build:
+
+```bash
+$ npm run build
+```
+
+To show Users list please use this credentials:
+email: mohammed.khairy@octane-tech.io
+password: 12345
 
 
+
+To show Orders list please use this credentials:
+email: heba.bahaa@octane-tech.io
+password: 12345

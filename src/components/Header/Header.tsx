@@ -4,7 +4,7 @@ import classes from './header.module.scss';
 import { RootState } from '../../store/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { resetUserProfile } from '../../store/slices/userProfile/userProfileSlice';
-import { Link } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 export const Header = () => {
   const { profile } = useSelector((state: RootState) => state.userProfile);
@@ -12,6 +12,7 @@ export const Header = () => {
 
   const handleLogout = () => {
     dispatch(resetUserProfile());
+    return <Navigate to={'/'} />
   }
 
   return (
@@ -29,7 +30,7 @@ export const Header = () => {
         <Image src={'/logo.png'} className={classes.logo} />
         <Flex gap='md' align='center'>
           <Text c='brand' fs='md' fw='500'>Hi, {profile?.username}</Text>
-          <Link to='/' onClick={handleLogout}><Button bg='brand'>Logout</Button></Link>
+          <Button bg='brand' onClick={handleLogout}>Logout</Button>
         </Flex>
       </Flex>
     </Container>

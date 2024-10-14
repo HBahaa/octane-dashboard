@@ -5,7 +5,7 @@
       "username": "Heba",
       "email": "heba.bahaa@octane-tech.io",
       "role": "User",
-      "status": false,
+      "status": true,
       "password": "12345"
     },
     {
@@ -20,7 +20,7 @@
       "id": "3",
       "username": "user",
       "email": "user@gmail.com",
-      "role": "User",
+      "role": "Guest",
       "status": true,
       "password": "12345"
     },
