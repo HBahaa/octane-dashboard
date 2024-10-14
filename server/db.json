@@ -3,7 +3,7 @@
     {
       "id": "1",
       "username": "Heba",
-      "email": "heba.bahaa@octane-tech.io",
+      "email": "heba@gmail.com",
       "role": "User",
       "status": true,
       "password": "12345"
@@ -11,7 +11,7 @@
     {
       "id": "2",
       "username": "Mohammed",
-      "email": "mohammed.khairy@octane-tech.io",
+      "email": "admin@gmail.com",
       "role": "Admin",
       "status": true,
       "password": "12345"

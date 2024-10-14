@@ -48,11 +48,15 @@ $ npm run build
 ```
 
 To show Users list please use this credentials:
-email: mohammed.khairy@octane-tech.io
+```
+email: admin@gmail.com
 password: 12345
-
+```
 
 
 To show Orders list please use this credentials:
-email: heba.bahaa@octane-tech.io
+```
+email: heba@gmail.com
 password: 12345
+
+```
