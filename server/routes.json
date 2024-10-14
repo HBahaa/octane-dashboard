@@ -1,0 +1,42 @@
+{
+	"/api/users": {
+		"GET": {
+			"action": "db.users"
+		},
+		"POST": {
+			"action": "db.users.push(req.body)",
+			"path": "/api/users"
+		}
+	},
+	"/api/users/:id": {
+		"GET": {
+			"action": "db.users.find(data => data.id == :id)"
+		},
+		"PUT": {
+			"action": "db.users.find(data => data.id == :id).completed = true"
+		},
+		"DELETE": {
+			"action": "db.users = db.users.filter(data => data.id != :id)"
+		}
+	},
+	"/api/orders": {
+		"GET": {
+			"action": "db.orders"
+		},
+		"POST": {
+			"action": "db.orders.push(req.body)",
+			"path": "/api/orders"
+		}
+	},
+	"/api/orders/:id": {
+		"GET": {
+			"action": "db.orders.find(data => data.id == :id)"
+		},
+		"PUT": {
+			"action": "db.orders.find(data => data.id == :id).completed = true"
+		},
+		"DELETE": {
+			"action": "db.orders = db.orders.filter(data => data.id != :id)"
+		}
+	}
+}

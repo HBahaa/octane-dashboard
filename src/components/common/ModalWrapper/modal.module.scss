@@ -1,0 +1,25 @@
+.modal {
+  :global {
+    .mantine-Modal-header,
+    .mantine-rtl-Modal-header,
+    .mantine-ScrollArea-scrollbar,
+    .mantine-rtl-ScrollArea-scrollbar {
+      z-index: 1;
+    }
+    @media screen and (max-width: 1024) {
+      .mantine-Modal-header,
+      .mantine-rtl-Modal-header {
+        position: relative;
+      }
+    }
+  }
+  &_title_center {
+    :global {
+      .mantine-Modal-title,
+      .mantine-rtl-Modal-title {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

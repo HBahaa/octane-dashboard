@@ -1,0 +1,1 @@
+export { MantineTable } from './Table';

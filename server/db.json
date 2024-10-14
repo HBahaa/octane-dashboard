@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "Heba",
+      "email": "heba.bahaa@octane-tech.io",
+      "role": "User",
+      "status": false,
+      "password": "12345"
+    },
+    {
+      "id": "2",
+      "username": "Mohammed",
+      "email": "mohammed.khairy@octane-tech.io",
+      "role": "Admin",
+      "status": true,
+      "password": "12345"
+    },
+    {
+      "id": "3",
+      "username": "user",
+      "email": "user@gmail.com",
+      "role": "User",
+      "status": true,
+      "password": "12345"
+    },
+    {
+      "id": "4",
+      "username": "guest",
+      "email": "guest@gmail.com",
+      "role": "Guest",
+      "status": false,
+      "password": "12345"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1200",
+      "customerName": "Heba",
+      "date": "Tue Dec 12 2023 00:00:00 GMT+0200",
+      "total": 59,
+      "status": "Delivered"
+    },
+    {
+      "id": "1211",
+      "customerName": "customer",
+      "date": "Mon May 20 2024 00:00:00 GMT+0300",
+      "total": 370,
+      "status": "Shipped"
+    },
+    {
+      "id": "1212",
+      "customerName": "Tia",
+      "date": "Tue Oct 14 2024 00:00:00 GMT+0200",
+      "total": 370,
+      "status": "Pending"
+    },
+    {
+      "id": "1214",
+      "customerName": "guest",
+      "date": "Sat Apr 06 2024 00:00:00 GMT+0200",
+      "total": 110,
+      "status": "Cancelled"
+    }
+  ]
+}
